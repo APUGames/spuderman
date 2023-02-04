@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Latchable
   layers:
   - Default
   - TransparentFX
@@ -44,12 +45,12 @@ TagManager:
   - name: Background
     uniqueID: 2631222835
     locked: 0
+  - name: Player
+    uniqueID: 3775563383
+    locked: 0
   - name: Foreground
     uniqueID: 1058231781
     locked: 0
   - name: Latchable
     uniqueID: 1525664655
-    locked: 0
-  - name: Player
-    uniqueID: 3775563383
     locked: 0
