@@ -57,10 +57,12 @@ public class RootGrappling : MonoBehaviour
     {
         moveTime += Time.deltaTime;
         DrawRope();
+       
     }
 
     void DrawRope()
     {
+
         if (!strightLine)
         {
             if (m_lineRenderer.GetPosition(percision - 1).x == grapplingGun.grapplePoint.x)
@@ -97,8 +99,10 @@ public class RootGrappling : MonoBehaviour
 
     void DrawRopeWaves()
     {
+
         for (int i = 0; i < percision; i++)
         {
+
             float delta = (float)i / ((float)percision - 1f);
             Vector2 offset = Vector2.Perpendicular(grapplingGun.grappleDistanceVector).normalized * ropeAnimationCurve.Evaluate(delta) * waveSize;
             Vector2 targetPosition = Vector2.Lerp(grapplingGun.firePoint.position, grapplingGun.grapplePoint, delta) + offset;

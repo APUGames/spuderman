@@ -4617,8 +4617,8 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
+  m_Mass: 10
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
@@ -5043,7 +5043,7 @@ MonoBehaviour:
   rotationSpeed: 4
   hasMaxDistance: 1
   maxDistnace: 10
-  launchToPoint: 1
+  launchToPoint: 0
   launchType: 1
   launchSpeed: 1
   autoConfigureDistance: 0
@@ -5151,7 +5151,7 @@ MonoBehaviour:
   grapplingGun: {fileID: 863715679}
   m_lineRenderer: {fileID: 1524940112}
   percision: 40
-  straightenLineSpeed: 5
+  straightenLineSpeed: 2.2
   ropeAnimationCurve:
     serializedVersion: 2
     m_Curve:
@@ -5165,8 +5165,8 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.28584874
-      value: 0.8124029
+      time: 0.21542943
+      value: -0.039800465
       inSlope: 1.1673987
       outSlope: 1.1673987
       tangentMode: 0
@@ -5174,8 +5174,8 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.5517127
-      value: 0.1859703
+      time: 0.31123418
+      value: 0.114910126
       inSlope: -0.041012328
       outSlope: -0.041012328
       tangentMode: 0
@@ -5183,10 +5183,28 @@ MonoBehaviour:
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.7761391
-      value: 0.7266174
+      time: 0.52460194
+      value: -0.03040576
+      inSlope: 1.2883893
+      outSlope: 1.2883893
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.7358559
+      value: 0.085935175
       inSlope: -0.67756456
       outSlope: -0.67756456
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.9313012
+      value: -0.0363441
+      inSlope: 0.1432195
+      outSlope: 0.1432195
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
@@ -5203,33 +5221,61 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  StartWaveSize: 2
+  StartWaveSize: 3
   ropeProgressionCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 34
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.33333334
+      outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 1
-      outSlope: 1
-      tangentMode: 34
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
+      inWeight: 0
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  ropeProgressionSpeed: 4.5
+  ropeProgressionSpeed: 8
   isGrappling: 1
+  textures:
+  - {fileID: 2800000, guid: 906c74682aadd9546a1e9c35d214e87b, type: 3}
+  - {fileID: 2800000, guid: 3f53f07fffbc22548a9e494ee56a16a9, type: 3}
+  - {fileID: 2800000, guid: 5405dc672f99ff4419a0b5d89e41a2ce, type: 3}
+  - {fileID: 2800000, guid: b725d097fec2eb84bb4258e1a00f471d, type: 3}
+  - {fileID: 2800000, guid: 2d2a646991966df439388020281c4721, type: 3}
+  - {fileID: 2800000, guid: a70ca076fd3609f4ab3cc3c5c76ca891, type: 3}
+  - {fileID: 2800000, guid: cf493042fb4eb9945a24d4220b48cfd0, type: 3}
+  - {fileID: 2800000, guid: 5e491f224de38af4081ca2cd1338ea7c, type: 3}
+  - {fileID: 2800000, guid: f43fc49f2d2a91b4dae95004c3092836, type: 3}
+  - {fileID: 2800000, guid: d3ce06d2b02d8954babf2f6f458ffc17, type: 3}
+  - {fileID: 2800000, guid: 426cea8864dd70149a42de2802d69f2e, type: 3}
+  - {fileID: 2800000, guid: c389438e6b2644e40bb97f3408998481, type: 3}
+  - {fileID: 2800000, guid: b97cc8e38291e6541964178a8f459d3e, type: 3}
+  - {fileID: 2800000, guid: de1b0fbd0b814ea498635a13340613e5, type: 3}
+  - {fileID: 2800000, guid: fbe58a2b09d9a724a8827d6ae9b90a2d, type: 3}
+  - {fileID: 2800000, guid: 893411323cea8ee4c8def3627cd661e9, type: 3}
+  - {fileID: 2800000, guid: be0561292d188044dafabd8ef11882db, type: 3}
+  - {fileID: 2800000, guid: ff1c4f9eda0a1bc439766f411d75b41e, type: 3}
+  - {fileID: 2800000, guid: 42990c61793c70549bff04888fa20d73, type: 3}
+  - {fileID: 2800000, guid: dfbf5df832ec82c4b9454780c94c8a66, type: 3}
+  - {fileID: 2800000, guid: 4e6fabaf39987a04e950120f0dc4f761, type: 3}
+  - {fileID: 2800000, guid: 84805711b680f9b48b1a4db319f7eb22, type: 3}
+  - {fileID: 2800000, guid: 0e6b4b250203c8347b44ccb34b41ba5a, type: 3}
+  - {fileID: 2800000, guid: eca22c466fb2cac4cac348e91ae8a9f1, type: 3}
+  - {fileID: 2800000, guid: 766628147a14a9f4bbca3a740f43de65, type: 3}
+  - {fileID: 2800000, guid: f277de390cf4e51469609f85c6133ff1, type: 3}
+  - {fileID: 2800000, guid: 57e09faf723bd4042a7d6a4c38c7253c, type: 3}
 --- !u!120 &1524940112
 LineRenderer:
   serializedVersion: 2
@@ -5251,7 +5297,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c2226cc38b4d5c943846d4315464ef14, type: 2}
+  - {fileID: 2100000, guid: b679e1585a42b994bab927291e4a2d07, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5325,7 +5371,7 @@ LineRenderer:
     numCornerVertices: 1
     numCapVertices: 10
     alignment: 0
-    textureMode: 0
+    textureMode: 1
     textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
