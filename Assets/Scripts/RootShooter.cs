@@ -62,7 +62,6 @@ public class RootShooter : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             SetGrapplePoint();
-            PlaySound();
         }
         else if (Input.GetKey(KeyCode.Mouse0))
         {
@@ -127,6 +126,7 @@ public class RootShooter : MonoBehaviour
                     grapplePoint = _hit.point;
                     grappleDistanceVector = grapplePoint - (Vector2)gunPivot.position;
                     grappleRope.enabled = true;
+                    PlayShootSound();
                 }
             }
         }
@@ -182,7 +182,7 @@ public class RootShooter : MonoBehaviour
     }
 
     // Sound
-    private void PlaySound() 
+    private void PlayShootSound() 
     {
         Debug.Log("root shoot sound called");
         FMODUnity.RuntimeManager.PlayOneShot("event:/Interactables/RootShoot");
