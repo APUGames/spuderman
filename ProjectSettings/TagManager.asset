@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Latchable
   layers:
   - Default
   - TransparentFX
@@ -52,4 +53,10 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3775563383
+    locked: 0
+  - name: Door
+    uniqueID: 1892138891
+    locked: 0
+  - name: Key
+    uniqueID: 781154611
     locked: 0
