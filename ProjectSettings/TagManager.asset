@@ -9,57 +9,48 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  -
+  - 
   - Water
   - UI
-  -
-  -
-  -
-  - GrappableLayer
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
+  - 
+  - 
+  - 
+  - Grappable
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Background
-    uniqueID: 2631222835
-    locked: 0
-  - name: Player
-    uniqueID: 3775563383
+    uniqueID: 1863658735
     locked: 0
   - name: Foreground
-    uniqueID: 1058231781
+    uniqueID: 2005400501
     locked: 0
-  - name: Latchable
-    uniqueID: 1525664655
+  - name: Grappable
+    uniqueID: 210615289
     locked: 0
   - name: Player
-    uniqueID: 3775563383
-    locked: 0
-  - name: Door
-    uniqueID: 1892138891
-    locked: 0
-  - name: Key
-    uniqueID: 781154611
+    uniqueID: 1462027167
     locked: 0

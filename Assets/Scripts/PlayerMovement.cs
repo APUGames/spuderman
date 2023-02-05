@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
 
         if(Input.GetButtonDown("Jump") && Mathf.Abs(rb2d.velocity.y) < 0.001f)
         {
-            rb2d.AddForce(new Vector2(0, jumpForce), ForceMode2D.Impulse);
+            rb2d.AddForce(new Vector2(0, jumpForce));
         }
     }
 }
