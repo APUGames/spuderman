@@ -126,6 +126,7 @@ public class RootShooter : MonoBehaviour
                     grapplePoint = _hit.point;
                     grappleDistanceVector = grapplePoint - (Vector2)gunPivot.position;
                     grappleRope.enabled = true;
+                    PlayShootSound();
                 }
             }
         }
@@ -178,6 +179,13 @@ public class RootShooter : MonoBehaviour
             Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(firePoint.position, maxDistnace);
         }
+    }
+
+    // Sound
+    private void PlayShootSound() 
+    {
+        // Debug.Log("root shoot sound called");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Interactables/RootShoot");
     }
 
 }
