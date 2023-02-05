@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private float horizontalDirection;
     private Rigidbody2D rb2d;
+    private CircleCollider2D playerCollider;
 
 
     public float moveSpeed = 5f;
@@ -15,11 +16,13 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        playerCollider = GetComponent <CircleCollider2D>();
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
+
         horizontalDirection = Input.GetAxisRaw("Horizontal");
         transform.position += new Vector3(horizontalDirection, 0, 0) * Time.deltaTime * moveSpeed;
 
@@ -28,4 +31,6 @@ public class PlayerMovement : MonoBehaviour
             rb2d.AddForce(new Vector2(0, jumpForce));
         }
     }
+
+
 }

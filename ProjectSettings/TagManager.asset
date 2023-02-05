@@ -12,8 +12,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Hazard
+  - Player
   - 
   - Grappable
   - 
@@ -53,4 +53,10 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1462027167
+    locked: 0
+  - name: Hazard
+    uniqueID: 3468597215
+    locked: 0
+  - name: Midground
+    uniqueID: 837363411
     locked: 0
