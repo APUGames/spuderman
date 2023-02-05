@@ -120,7 +120,11 @@ public class RootShooter : MonoBehaviour
 
     void SetGrapplePoint()
     {
-        Vector2 distanceVector = m_camera.ScreenToWorldPoint(Input.mousePosition) - gunPivot.position;
+        Vector3 screenPos = m_camera.ScreenToWorldPoint(Input.mousePosition);
+        screenPos = new Vector3(screenPos.x, screenPos.y, 0);
+
+        Vector3 gunPos = new Vector3(gunPivot.position.x, gunPivot.position.y, 0);
+        Vector2 distanceVector = screenPos - gunPos;
         if (Physics2D.Raycast(this.transform.position, distanceVector.normalized))
         {
             RaycastHit2D _hit = Physics2D.Raycast(this.transform.position, distanceVector.normalized);

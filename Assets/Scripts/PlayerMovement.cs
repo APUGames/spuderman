@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
 
     public RootGrappling Grappler;
+    public GameObject sprite;
 
     public float moveSpeed = 5f;
     public float jumpForce = 1;
@@ -38,6 +39,14 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
+            if (horizontalDirection < 0)
+            {
+                sprite.transform.localScale = new Vector3(-1f, 1f, 1f);
+            }
+            else if (horizontalDirection > 0)
+            {
+                sprite.transform.localScale = new Vector3(1f, 1f, 1f);
+            }
             transform.position += new Vector3(horizontalDirection, 0, 0) * Time.deltaTime * moveSpeed;
             animator.enabled = true;
         }
