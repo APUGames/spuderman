@@ -62,6 +62,7 @@ public class RootShooter : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             SetGrapplePoint();
+            PlaySound();
         }
         else if (Input.GetKey(KeyCode.Mouse0))
         {
@@ -178,6 +179,13 @@ public class RootShooter : MonoBehaviour
             Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(firePoint.position, maxDistnace);
         }
+    }
+
+    // Sound
+    private void PlaySound() 
+    {
+        Debug.Log("root shoot sound called");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Interactables/RootShoot");
     }
 
 }

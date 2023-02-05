@@ -745,7 +745,7 @@ www.yangseunghyuk.com</value>
 	</object>
 	<object class="AutomationPoint" id="{8e1d764d-52fd-49fb-badd-b349719bdbd6}">
 		<property name="position">
-			<value>15.960451977401124</value>
+			<value>43.644067796610166</value>
 		</property>
 		<property name="value">
 			<value>0</value>
@@ -780,7 +780,7 @@ www.yangseunghyuk.com</value>
 	</object>
 	<object class="AutomationPoint" id="{96c0f19d-9a1a-49d1-827e-255c5826caf4}">
 		<property name="position">
-			<value>25.317796610169495</value>
+			<value>36.052259887005647</value>
 		</property>
 		<property name="value">
 			<value>0</value>
@@ -805,7 +805,7 @@ www.yangseunghyuk.com</value>
 			<value>-80</value>
 		</property>
 		<property name="curveShape">
-			<value>-0.393972009</value>
+			<value>-0.220053136</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{57795017-9078-45de-8812-24c9c160e8cc}">
@@ -818,7 +818,7 @@ www.yangseunghyuk.com</value>
 	</object>
 	<object class="AutomationPoint" id="{6fabc976-d026-425d-a3c0-f7db811a2229}">
 		<property name="position">
-			<value>8.4039548022598822</value>
+			<value>15.748587570621464</value>
 		</property>
 		<property name="value">
 			<value>-80</value>
@@ -840,7 +840,7 @@ www.yangseunghyuk.com</value>
 	</object>
 	<object class="AutomationPoint" id="{b46183d1-eb28-4a41-bb96-e755edfbe7a5}">
 		<property name="position">
-			<value>42.937853107344637</value>
+			<value>62.146892655367239</value>
 		</property>
 		<property name="value">
 			<value>0</value>
@@ -856,15 +856,15 @@ www.yangseunghyuk.com</value>
 	</object>
 	<object class="AutomationPoint" id="{fad7489d-12e7-49be-a441-7abf6876a3f9}">
 		<property name="position">
-			<value>51.836158192090394</value>
+			<value>65.395480225988706</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>-1</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{bcc523a4-b5d7-4438-a261-62d6d9892066}">
 		<property name="position">
-			<value>25.812146892655363</value>
+			<value>34.004237288135585</value>
 		</property>
 		<property name="value">
 			<value>-80</value>
@@ -883,7 +883,7 @@ www.yangseunghyuk.com</value>
 	</object>
 	<object class="AutomationPoint" id="{4f3c105a-b308-480b-8843-5c7ab021fc3d}">
 		<property name="position">
-			<value>66.525423728813564</value>
+			<value>51.271186440677972</value>
 		</property>
 		<property name="value">
 			<value>-80</value>
