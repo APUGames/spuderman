@@ -25,7 +25,6 @@ public class GameCompletionTracker : MonoBehaviour {
 
     private void Update()
     {
-        Debug.Log("levelLen = " + levelLen);
         // calculate distance between begin and end
         float currentDist = Vector2.Distance(playerObj.transform.position, endLoc);
         // compare player distance to total distance, invert, map between 0 - 100
