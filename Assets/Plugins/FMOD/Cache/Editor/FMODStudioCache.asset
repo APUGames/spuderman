@@ -122,7 +122,7 @@ MonoBehaviour:
   Path: spuderman_sound/Build/Desktop/VO.bank
   Name: VO
   StudioPath: bank:/VO
-  lastModified: 638112026694529010
+  lastModified: 638112052690893316
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -169,7 +169,7 @@ MonoBehaviour:
   Path: spuderman_sound/Build/Desktop/Dialogue_CN.bank
   Name: Dialogue_CN
   StudioPath: bank:/Dialogue_CN
-  lastModified: 638112026692440187
+  lastModified: 638112052650331024
   FileSizes:
   - Name: Desktop
     Value: 52416
@@ -216,7 +216,7 @@ MonoBehaviour:
   Path: spuderman_sound/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638112026692470181
+  lastModified: 638112052650774446
   FileSizes:
   - Name: Desktop
     Value: 15542
@@ -292,11 +292,39 @@ MonoBehaviour:
   Path: spuderman_sound/Build/Desktop/Vehicles.bank
   Name: Vehicles
   StudioPath: bank:/Vehicles
-  lastModified: 638112026694538990
+  lastModified: 638112052690882497
   FileSizes:
   - Name: Desktop
     Value: 494
   Exists: 1
+--- !u!114 &-3629891354608732215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Level 01
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Level 01
+  Guid:
+    Data1: -939964675
+    Data2: 1234949781
+    Data3: 661987496
+    Data4: 496157849
+  Banks:
+  - {fileID: -2284002641370156399}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8963161109371288743}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 170464
 --- !u!114 &-2284002641370156399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,10 +340,10 @@ MonoBehaviour:
   Path: spuderman_sound/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638112026693419626
+  lastModified: 638112052688109112
   FileSizes:
   - Name: Desktop
-    Value: 10942048
+    Value: 13785184
   Exists: 1
 --- !u!114 &-1982434815608339439
 MonoBehaviour:
@@ -481,7 +509,6 @@ MonoBehaviour:
   - {fileID: 8112886951338851775}
   - {fileID: -6325712688744112591}
   - {fileID: -972533984302871671}
-  - {fileID: 4639067689067275157}
   - {fileID: 3579826449794588581}
   - {fileID: 8053117832575007854}
   - {fileID: -6956813852758055703}
@@ -495,12 +522,16 @@ MonoBehaviour:
   - {fileID: -8295405284766010819}
   - {fileID: -1186187392790206163}
   - {fileID: -8335644773904814453}
+  - {fileID: 7139346680274494221}
+  - {fileID: 729597600232473225}
+  - {fileID: 2429212032516579304}
+  - {fileID: -3629891354608732215}
   EditorParameters: []
   MasterBanks:
   - {fileID: -6457626323427961122}
   StringsBanks:
   - {fileID: 4573883217303827874}
-  cacheTime: 638112026694538990
+  cacheTime: 638112052690893316
   cacheVersion: 10
 --- !u!114 &248257904069032455
 MonoBehaviour:
@@ -545,7 +576,7 @@ MonoBehaviour:
   Path: spuderman_sound/Build/Desktop/Dialogue_JP.bank
   Name: Dialogue_JP
   StudioPath: bank:/Dialogue_JP
-  lastModified: 638112026692470181
+  lastModified: 638112052650648203
   FileSizes:
   - Name: Desktop
     Value: 66592
@@ -601,6 +632,60 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &729597600232473225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/WinScreen
+  m_EditorClassIdentifier: 
+  Path: event:/Music/WinScreen
+  Guid:
+    Data1: 1777881175
+    Data2: 1229465057
+    Data3: -1730306392
+    Data4: -1283883576
+  Banks:
+  - {fileID: -2284002641370156399}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 35887
+--- !u!114 &2429212032516579304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/StartMenu
+  m_EditorClassIdentifier: 
+  Path: event:/Music/StartMenu
+  Guid:
+    Data1: -30210819
+    Data2: 1299705543
+    Data3: 1727209354
+    Data4: -558195749
+  Banks:
+  - {fileID: -2284002641370156399}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 152523
 --- !u!114 &2556398771169972129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -664,7 +749,7 @@ MonoBehaviour:
   Path: spuderman_sound/Build/Desktop/Dialogue_EN.bank
   Name: Dialogue_EN
   StudioPath: bank:/Dialogue_EN
-  lastModified: 638112026692450182
+  lastModified: 638112052650490926
   FileSizes:
   - Name: Desktop
     Value: 61120
@@ -712,39 +797,11 @@ MonoBehaviour:
   Path: spuderman_sound/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638112026692480171
+  lastModified: 638112052650794298
   FileSizes:
   - Name: Desktop
-    Value: 2924
+    Value: 3054
   Exists: 1
---- !u!114 &4639067689067275157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Level 01
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Level 01
-  Guid:
-    Data1: -939964675
-    Data2: 1234949781
-    Data3: 661987496
-    Data4: 496157849
-  Banks:
-  - {fileID: -2284002641370156399}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 8025737386943967676}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 170464
 --- !u!114 &4884411640735111745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -760,7 +817,7 @@ MonoBehaviour:
   Path: spuderman_sound/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638112026694499032
+  lastModified: 638112052690722372
   FileSizes:
   - Name: Desktop
     Value: 21365088
@@ -843,7 +900,7 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &8025737386943967676
+--- !u!114 &7139346680274494221
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -852,21 +909,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Level 01/level_completion
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/GameOver
   m_EditorClassIdentifier: 
-  Name: level_completion
-  StudioPath: 
-  Min: 0
-  Max: 100
-  Default: 0
-  ID:
-    data1: 533873593
-    data2: 3478576879
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
+  Path: event:/Music/GameOver
+  Guid:
+    Data1: 186460440
+    Data2: 1074515038
+    Data3: 733698457
+    Data4: 1248399231
+  Banks:
+  - {fileID: -2284002641370156399}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 21472
 --- !u!114 &8053117832575007854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -996,6 +1056,30 @@ MonoBehaviour:
   ID:
     data1: 3727696508
     data2: 3861323375
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &8963161109371288743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Level 01/level_completion
+  m_EditorClassIdentifier: 
+  Name: level_completion
+  StudioPath: 
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 533873593
+    data2: 3478576879
   Type: 0
   IsGlobal: 0
   Labels: []
