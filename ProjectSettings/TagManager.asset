@@ -39,11 +39,11 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BG
+    uniqueID: 3788969161
+    locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Background
-    uniqueID: 1863658735
     locked: 0
   - name: Midground
     uniqueID: 837363411
@@ -54,9 +54,9 @@ TagManager:
   - name: Grappable
     uniqueID: 210615289
     locked: 0
-  - name: Player
-    uniqueID: 1462027167
-    locked: 0
   - name: Hazard
     uniqueID: 3468597215
+    locked: 0
+  - name: Player
+    uniqueID: 1462027167
     locked: 0
