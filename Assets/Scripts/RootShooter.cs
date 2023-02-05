@@ -90,6 +90,7 @@ public class RootShooter : MonoBehaviour
                 }
             }
         }
+        //Grapple Release
         else if (Input.GetKeyUp(KeyCode.Mouse0))
         {
             grappleRope.enabled = false;

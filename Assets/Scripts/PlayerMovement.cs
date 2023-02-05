@@ -32,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
         if (Grappler.enabled)
         {
             animator.enabled = false;
+            transform.position += new Vector3(horizontalDirection, 0, 0) * Time.deltaTime * moveSpeed;
         }
         else if (horizontalDirection == 0)
         {
