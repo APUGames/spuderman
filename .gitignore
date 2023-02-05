@@ -97,3 +97,6 @@ fmod_editor.log
 # Project specific
 raw_sound_assets
 *.asd
+
+spuderman_sound/.cache/*
+.vscode/
