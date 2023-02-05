@@ -184,7 +184,7 @@ public class RootShooter : MonoBehaviour
     // Sound
     private void PlayShootSound() 
     {
-        Debug.Log("root shoot sound called");
+        // Debug.Log("root shoot sound called");
         FMODUnity.RuntimeManager.PlayOneShot("event:/Interactables/RootShoot");
     }
 
