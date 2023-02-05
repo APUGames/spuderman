@@ -11,6 +11,7 @@ public class RootShooter : MonoBehaviour
     [SerializeField] private bool grappleToAll = false;
     [SerializeField] private int grappableLayerNumber = 9;
 
+
     [Header("Main Camera:")]
     public Camera m_camera;
 
@@ -30,6 +31,9 @@ public class RootShooter : MonoBehaviour
     [Header("Distance:")]
     [SerializeField] private bool hasMaxDistance = false;
     [SerializeField] private float maxDistnace = 20;
+
+    [Header("Animation")]
+    public Animator m_animation;
 
     private enum LaunchType
     {
@@ -54,6 +58,7 @@ public class RootShooter : MonoBehaviour
     {
         grappleRope.enabled = false;
         m_springJoint2D.enabled = false;
+        m_animation.enabled = false;
 
     }
 
@@ -115,10 +120,14 @@ public class RootShooter : MonoBehaviour
 
     void SetGrapplePoint()
     {
-        Vector2 distanceVector = m_camera.ScreenToWorldPoint(Input.mousePosition) - gunPivot.position;
-        if (Physics2D.Raycast(firePoint.position, distanceVector.normalized))
+        Vector3 screenPos = m_camera.ScreenToWorldPoint(Input.mousePosition);
+        screenPos = new Vector3(screenPos.x, screenPos.y, 0);
+
+        Vector3 gunPos = new Vector3(gunPivot.position.x, gunPivot.position.y, 0);
+        Vector2 distanceVector = screenPos - gunPos;
+        if (Physics2D.Raycast(this.transform.position, distanceVector.normalized))
         {
-            RaycastHit2D _hit = Physics2D.Raycast(firePoint.position, distanceVector.normalized);
+            RaycastHit2D _hit = Physics2D.Raycast(this.transform.position, distanceVector.normalized);
             if (_hit.transform.gameObject.layer == grappableLayerNumber || grappleToAll)
             {
                 if (Vector2.Distance(_hit.point, firePoint.position) <= maxDistnace || !hasMaxDistance)
@@ -127,6 +136,7 @@ public class RootShooter : MonoBehaviour
                     grappleDistanceVector = grapplePoint - (Vector2)gunPivot.position;
                     grappleRope.enabled = true;
                     PlayShootSound();
+                    m_animation.enabled = false;
                 }
             }
         }
@@ -184,7 +194,6 @@ public class RootShooter : MonoBehaviour
     // Sound
     private void PlayShootSound() 
     {
-        // Debug.Log("root shoot sound called");
         FMODUnity.RuntimeManager.PlayOneShot("event:/Interactables/RootShoot");
     }
 

@@ -6,8 +6,12 @@ public class PlayerMovement : MonoBehaviour
 {
     private float horizontalDirection;
     private Rigidbody2D rb2d;
-    private CircleCollider2D playerCollider;
 
+    [SerializeField]
+    public Animator animator;
+
+    public RootGrappling Grappler;
+    public GameObject sprite;
 
     public float moveSpeed = 5f;
     public float jumpForce = 1;
@@ -16,21 +20,35 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        playerCollider = GetComponent <CircleCollider2D>();
+        animator.enabled = false;
     }
 
     // Update is called once per frame
-    public void Update()
+    void Update()
     {
-
         horizontalDirection = Input.GetAxisRaw("Horizontal");
-        transform.position += new Vector3(horizontalDirection, 0, 0) * Time.deltaTime * moveSpeed;
 
-        if(Input.GetButtonDown("Jump") && Mathf.Abs(rb2d.velocity.y) < 0.001f)
+
+        if (Grappler.enabled)
         {
-            rb2d.AddForce(new Vector2(0, jumpForce));
+            animator.enabled = false;
+        }
+        else if (horizontalDirection == 0)
+        {
+            animator.enabled = false;
+        }
+        else
+        {
+            if (horizontalDirection < 0)
+            {
+                sprite.transform.localScale = new Vector3(-1f, 1f, 1f);
+            }
+            else if (horizontalDirection > 0)
+            {
+                sprite.transform.localScale = new Vector3(1f, 1f, 1f);
+            }
+            transform.position += new Vector3(horizontalDirection, 0, 0) * Time.deltaTime * moveSpeed;
+            animator.enabled = true;
         }
     }
-
-
 }
