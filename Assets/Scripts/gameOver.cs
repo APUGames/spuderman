@@ -19,7 +19,7 @@ public class gameOver : MonoBehaviour
         if(hazard.IsTouchingLayers(LayerMask.GetMask("Player")))
         {
                     print("Die triggered");
-                    SceneManager.LoadScene(0);
+                    SceneManager.LoadScene(3);
                     //FindObjectOfType<GameManager>().deathReset();
                 }
             }

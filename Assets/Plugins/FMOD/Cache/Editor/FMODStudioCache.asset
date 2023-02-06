@@ -122,7 +122,7 @@ MonoBehaviour:
   Path: spuderman_sound/Build/Desktop/VO.bank
   Name: VO
   StudioPath: bank:/VO
-  lastModified: 638112052690893316
+  lastModified: 638111450400497331
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -169,7 +169,7 @@ MonoBehaviour:
   Path: spuderman_sound/Build/Desktop/Dialogue_CN.bank
   Name: Dialogue_CN
   StudioPath: bank:/Dialogue_CN
-  lastModified: 638112052650331024
+  lastModified: 638111450389605953
   FileSizes:
   - Name: Desktop
     Value: 52416
@@ -216,7 +216,7 @@ MonoBehaviour:
   Path: spuderman_sound/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638112052650774446
+  lastModified: 638111450390325607
   FileSizes:
   - Name: Desktop
     Value: 15542
@@ -292,7 +292,7 @@ MonoBehaviour:
   Path: spuderman_sound/Build/Desktop/Vehicles.bank
   Name: Vehicles
   StudioPath: bank:/Vehicles
-  lastModified: 638112052690882497
+  lastModified: 638111450400517324
   FileSizes:
   - Name: Desktop
     Value: 494
@@ -340,7 +340,7 @@ MonoBehaviour:
   Path: spuderman_sound/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638112052688109112
+  lastModified: 638112078794847757
   FileSizes:
   - Name: Desktop
     Value: 13785184
@@ -531,7 +531,7 @@ MonoBehaviour:
   - {fileID: -6457626323427961122}
   StringsBanks:
   - {fileID: 4573883217303827874}
-  cacheTime: 638112052690893316
+  cacheTime: 638112078794847757
   cacheVersion: 10
 --- !u!114 &248257904069032455
 MonoBehaviour:
@@ -576,7 +576,7 @@ MonoBehaviour:
   Path: spuderman_sound/Build/Desktop/Dialogue_JP.bank
   Name: Dialogue_JP
   StudioPath: bank:/Dialogue_JP
-  lastModified: 638112052650648203
+  lastModified: 638111450389685643
   FileSizes:
   - Name: Desktop
     Value: 66592
@@ -749,7 +749,7 @@ MonoBehaviour:
   Path: spuderman_sound/Build/Desktop/Dialogue_EN.bank
   Name: Dialogue_EN
   StudioPath: bank:/Dialogue_EN
-  lastModified: 638112052650490926
+  lastModified: 638111450389645944
   FileSizes:
   - Name: Desktop
     Value: 61120
@@ -797,7 +797,7 @@ MonoBehaviour:
   Path: spuderman_sound/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638112052650794298
+  lastModified: 638112078792589068
   FileSizes:
   - Name: Desktop
     Value: 3054
@@ -817,7 +817,7 @@ MonoBehaviour:
   Path: spuderman_sound/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638112052690722372
+  lastModified: 638111450400236026
   FileSizes:
   - Name: Desktop
     Value: 21365088
